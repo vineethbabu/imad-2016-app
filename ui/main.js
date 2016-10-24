@@ -12,7 +12,7 @@
             var map = new google.maps.Map(document.getElementById("map"),mapOptions);
          }
 			
-         google.maps.event.addDomListener(window, 'load', loadMap);
+         busnumber.innerHTML=button;
       
       
    
