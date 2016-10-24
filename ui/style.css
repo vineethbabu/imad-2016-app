@@ -30,3 +30,8 @@ body {
  width:580px; 
  height:400px ;  
 }
+
+.image {
+    width:250px;
+    height:250px;
+}
