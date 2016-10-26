@@ -31,16 +31,17 @@ app.get('/ui/logo.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'logo.png'));
 });
 
-app.get('/test-db', function (req, res) {
+app.get('/test-db', function (req, res){
  pool.query('SELECT*FROM dbtest',function(err,result){
      if(err){
          res.status(500).send(err.toString());
+     }
          else
          {
              res.send(JSON.stringify(result));
          }
-     }
- }
+     
+ });
 });
 
 
