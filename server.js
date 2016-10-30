@@ -53,7 +53,7 @@ app.get('/businfo/:busno', function (req, res){
          else {
              if (result.row.length === 0)
          {
-             res.status(404).send('Article not found');
+             res.status(404).send('Bus Info not found');
          }
          else{
              var busData=result.rows[0];
