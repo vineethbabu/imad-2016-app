@@ -32,7 +32,7 @@ app.get('/ui/logo.png', function (req, res) {
 });
 
 app.get('/businfo', function (req, res){
- pool.query('SELECT*FROM busone',function(err,result){
+ pool.query('SELECT*FROM businfo',function(err,result){
      if(err){
          res.status(500).send(err.toString());
      }
