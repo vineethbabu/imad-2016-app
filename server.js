@@ -64,6 +64,21 @@ app.get('/businfo/:busno', function (req, res){
  });
 });
 
+
+app.get('/bustwo', function (req, res){
+ pool.query('SELECT*FROM bustwo',function(err,result){
+     if(err){
+         res.status(500).send(err.toString());
+     }
+         else
+         {
+             res.send(JSON.stringify(result.rows));
+         }
+     
+ });
+});
+
+
 app.get('/bustwo', function (req, res){
  pool.query('SELECT*FROM bustwo',function(err,result){
      if(err){
