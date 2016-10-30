@@ -65,8 +65,8 @@ app.get('/businfo/:busno', function (req, res){
 });
 
 
-app.get('/bustwo', function (req, res){
- pool.query('SELECT*FROM bustwo',function(err,result){
+app.get('/busone', function (req, res){
+ pool.query('SELECT*FROM busone',function(err,result){
      if(err){
          res.status(500).send(err.toString());
      }
