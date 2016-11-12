@@ -31,9 +31,6 @@ app.get('/ui/logo.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'logo.png'));
 });
 
-app.get('map', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'logo.png'));
-});
 
 app.get('/businfo', function (req, res){
  pool.query('SELECT*FROM businfo',function(err,result){
